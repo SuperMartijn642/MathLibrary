@@ -3,7 +3,7 @@ package supermartijn642.math;
 /**
  * Created 3/13/2019 by SuperMartijn642
  */
-public class Vector4D implements IVectorD {
+public class Vector4D {
 
     public double x, y, z, w;
 
@@ -68,15 +68,5 @@ public class Vector4D implements IVectorD {
 
     public static Vector4D zero(){
         return new Vector4D(0,0,0,0);
-    }
-
-    @Override
-    public int getSize() {
-        return 4;
-    }
-
-    @Override
-    public double getValue(int index) {
-        return index == 0 ? this.x : index == 1 ? this.y : index == 2 ? this.z : index == 3 ? this.w : 0;
     }
 }

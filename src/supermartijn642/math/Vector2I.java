@@ -3,7 +3,7 @@ package supermartijn642.math;
 /**
  * Created 4/26/2019 by SuperMartijn642
  */
-public class Vector2I implements IVectorI {
+public class Vector2I {
 
     public int x, y;
 
@@ -66,16 +66,6 @@ public class Vector2I implements IVectorI {
 
     public static Vector2I zero(){
         return new Vector2I(0,0);
-    }
-
-    @Override
-    public int getSize() {
-        return 2;
-    }
-
-    @Override
-    public int getValue(int index) {
-        return index == 0 ? this.x : index == 1 ? this.y : 0;
     }
 
     public double angle(){
